@@ -6,19 +6,18 @@ public class Fatorial {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		int n, sum = 0;
+		long n = 0;
 
 		System.out.println("Digite um número e encontre o seu fatorial entre 1 e 10: ");
-		int fat = input.nextInt();
+		long fat = input.nextLong();
 
 		n = fat;
 
-		for (int i = fat; i > 1; i--) {
+		for (long i = fat; i > 1; i--) {
 			fat--;
 			n = n * fat;
+			System.out.println(n);
 		}
-
-		System.out.println(n);
 
 		input.close();
 	}
